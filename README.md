@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ember-cli-zbutton
 
 This README outlines the details of collaborating on this Ember addon.
@@ -23,3 +24,6 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+=======
+Creating Sample UI Components in Ember.
+>>>>>>> 81dce0e4ecb3834f8e8b298df5616548999c8f28

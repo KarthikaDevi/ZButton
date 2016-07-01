@@ -1,0 +1,493 @@
+body{ 
+	background-color:#fff; 
+	margin:0; 
+	font:normal 13px Lucida Grande, Segoe UI, Arial, Helvetica, sans-serif;
+}
+button::-moz-focus-inner { 
+  border: 0;
+  padding: 0;
+}
+.zbutton {
+	display:inline-block;
+	position:relative;
+	text-decoration:none;
+	text-align:center;
+	overflow:visible;
+	cursor:pointer;
+	padding:5px 13px;
+	margin-right:5px;
+	border:1px solid transparent;
+	background-color:#eaeaea;
+	color:#181818;
+	border-color:#eaeaea;
+	border-bottom-color:#d9d9d9;
+	-ms-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	line-height:1.4;/*height:30px;*/
+}
+
+
+/*Hover color*/ 
+.zbutton:hover {
+	background-color: #e3e3e3;
+	border-color: #e3e3e3;
+	border-bottom-color: #cdcdcd;
+}
+/*.zbutton:hover{
+	background-color:#ddd;
+	border-color:#ddd;
+	border-bottom-color:#cdcdcd
+}*/
+
+.zbutton--primary.zbutton:hover {
+	background-color: #5c5c5c;
+	border-color: #5c5c5c;
+	border-bottom-color: #262626;
+}
+
+/*Focus color*/ 
+.zbutton:focus,.zbutton:focus:hover{
+	outline:none;
+	background-color:#eaeaea;
+	border:1px solid #c4c4c4;
+	-moz-box-shadow:inset 0 0 0 1px #fff;
+	-webkit-box-shadow:inset 0 0 0 1px #fff;
+	-ms-box-shadow:inset 0 0 0 1px #fff;
+	-o-box-shadow:inset 0 0 0 1px #fff;
+	box-shadow:inset 0 0 0 1px #fff;
+}
+.zbutton:focus:hover{
+	background-color:#ddd;
+	border:1px solid #c4c4c4;
+}
+
+.zbutton:active, 
+.zbutton:focus:active, 
+.zbutton-active,
+.zbutton:hover.zbutton-active{ 
+	background-color:#d6d6d6; 
+	border-color:#d6d6d6;
+	box-shadow:none;
+}
+.zbutton:hover.zbutton-active{ cursor:default;}
+
+
+/*Primary Button hover, focus bgcolor & bdr color*/
+.zbutton--primary.zbutton{
+	background-color:#666;
+	color:#fff;
+	border-color:#666;
+	border-bottom-color:#323232;
+}
+
+/*.zbutton--primary.zbutton:hover{
+	background-color:#555;
+	border-color:#555;
+	border-bottom-color:#262626;
+}*/
+.zbutton--primary.zbutton:focus{
+	background-color:#666666;
+	border-color:#323232;
+}
+.zbutton--primary.zbutton:focus:hover{
+	background-color:#555;
+}
+
+
+
+/*Primary Button Active status class*/
+.zbutton--primary.zbutton:active, 
+.zbutton--primary.zbutton:focus:active{	
+	background-color:#494949; 
+	border-color:#494949;
+	box-shadow:none;
+}
+
+
+
+/*Primary Button hover, focus bgcolor & bdr color*/
+
+
+/*Only Icon Relative Class*/
+/*.zc-icon-primary, 
+.zc-icon-secondary{
+	float:left;
+	position:relative;
+	margin-top:1px;
+}*/
+.zbutton--splitgroup .zc-icon-secondary{ 
+	margin-top:0px;
+}
+
+.zbutton.zbutton--dropdown .zbutton__text
+/*,.zbutton .zbutton__text*/{ 
+	float:left;
+	line-height:1.5;
+}
+
+/*.zc-icon.zc-icon-triangle-1-s{ 
+	height:16px;
+	width:16px;
+	display:block;
+}*/
+/*Only Icon Relative Class*/
+
+
+
+/*Normal button left side icon with text*/
+.zbutton--texticon .zbutton__text, 
+.zbutton.zbutton--texticon .zbutton__text{ 
+	padding:0 0 0 6px;
+}
+
+.zc-normal-btnset .zbutton--icononly{ 
+	width:44px;
+}
+
+
+
+
+/*Dropdown button class*/
+/*Naga hide*/
+/*.zbutton--dropdown-txticon-secondary .zbutton__text{ 
+	padding:0 2px 0 0
+}
+.zbutton--dropdown-txticons .zbutton__text{ 
+	padding:0 2px 0 6px
+}*/
+.zbutton--dropdown-icons-only{ 
+	width:60px;
+}
+
+
+.zbutton--dropdown .zc-icon-triangle-1-s{ 
+	left:5px; 
+	margin-right:5px;
+}
+
+
+
+/*Split button class*/
+.zbutton--splitgroup{ 
+	display:inline-block;
+}
+.zc-splitbtn-txticon-primary .zbutton__text{ 
+	padding-left:7px;
+}
+.zsplitbtn-secondary-icon-only{ 
+	padding:6px 0 5px 4px;
+	border-left:1px solid #d9d9d9;
+	width:26px;
+	/*height:auto;*/ 
+}
+.zbutton--splitgroup .zbutton--icononly, 
+.zbutton--splitgroup .zbutton--textonly, 
+.zbutton--splitgroup .zbutton--texticon--primary{ 
+	margin-right:-1px; 
+	float:left;
+}
+.zbutton--splitgroup .zbutton--texticon--primary .zbutton__icon{ margin-right:6px;}
+
+/*.zc-splitbtn-primary-icon-only{ 
+	width:46px;
+}*/
+.zsplitbtn-secondary-icon-only .zbutton__icon.zbutton__arrow{ margin-left:0;}
+
+/*.zsplitbtn-secondary-icon-only .zc-icon-primary,
+.zsplitbtn-secondary-icon-only .zc-icon-secondary{ 
+	left:7px; 
+}*/
+.zsplitbtn-secondary-icon-only.zbutton--primary {
+    border-left-color: #444;
+}
+.zbutton--splitgroup .zsplitbtn-secondary-icon-only.zbutton--primary.zbutton:hover {
+    border-left-color: #444;
+}
+.zsplitbtn-secondary-icon-only{ 
+	margin-right:0;
+}
+.zbutton--splitgroup .zbutton--icononly + .zsplitbtn-secondary-icon-only{ padding-top:5px;}
+.zbutton--splitgroup .zsplitbtn-secondary-icon-only.zbutton:hover{ border-left-color:#d9d9d9}
+
+
+/*Selection button class code*/
+.zbutton--group{ display:inline-block; vertical-align:top;}
+
+.zbutton--group .zbutton--icononly,
+.zbutton--group .zbutton--textonly,
+.zbutton--group .zbutton--texticon{
+	margin-right:-1px; 
+	float:left;
+	border-left:1px solid #d6d6d6 ; 
+}
+.zc-sbtn-icon-only{ 
+	width:40px;
+	padding:6px 1px; 
+}
+.zbutton--group .zbutton.zbutton--icononly:nth-child(2),
+.zbutton--group .zbutton.zbutton--textonly:nth-child(2),
+.zbutton--group .zbutton.zbutton--texticon--primary:nth-child(2){ 
+	border-left-color:transparent
+}
+/* Fix - Buttons present inside Buttonset */
+.zbutton--group .zbutton.zbutton--icononly:first-child,
+.zbutton--group .zbutton.zbutton--textonly:first-child,
+.zbutton--group .zbutton.zbutton--texticon--primary:first-child{ 
+	border-left-color:transparent
+}
+.zc-sbtn-icon-only .zc-icon-primary{ 
+	left: 50%;
+    margin-left:-8px;
+}
+
+.zbutton--group .zbutton--icononly.zbutton--primary, 
+.zbutton--group .zbutton--textonly.zbutton--primary, 
+.zbutton--group .zbutton--texticon.zbutton--primary {
+    border-left-color: #444;
+}
+
+
+
+/*File type button class Start here*/
+
+.zc-file-btn{ overflow:hidden;}
+.zc-zbutton-file{
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(Opacity=0);
+    font-size:500px;
+    cursor: pointer;
+    z-index: 1;
+	top: 0;
+    right: 0;
+}
+/*File type button class End here*/
+
+
+
+/*All Type button Disabled Class*/
+.zbutton.zbutton-disabled,
+.zbutton--primary.zbutton.zbutton-disabled{ 
+	opacity:.65; 
+	cursor:default;
+}
+.zbutton:hover.zbutton-disabled,
+.zbutton:focus.zbutton-disabled, 
+.zbutton--primary.zbutton:hover.zbutton-disabled, 
+.zbutton--primary.zbutton:focus.zbutton-disabled{ 
+	box-shadow:none; 
+	border-top:1px solid transparent;
+	border-right:1px solid transparent;
+	border-left:1px solid transparent; 
+	background-color:#eaeaea;
+}
+
+.zbutton--group .zbutton:hover.zbutton-disabled{ 
+	border-left-color:#d6d6d6; 
+	border-bottom-color:#d9d9d9
+}
+.zbutton--group .zbutton:hover.zbutton-disabled:nth-child(2){ 
+	border-left-color:transparent
+}
+/* Fix - Buttons present inside Buttonset */
+.zbutton--group .zbutton:hover.zbutton-disabled:first-child{ 
+	border-left-color:transparent
+}
+
+.zbutton--group .zbutton-active, .zbutton--group .zbutton:hover.zbutton-active{ 
+	border-left-color:#EAEAEA; 
+	border-bottom-color:#d6d6d6;
+}
+.zbutton--group .zbutton.zbutton-active:nth-child(2), 
+.zbutton--group .zbutton:hover.zbutton-active:nth-child(2){ 
+	border-left-color:#d6d6d6
+}
+/* Fix - Buttons present inside Buttonset */
+.zbutton--group .zbutton.zbutton-active:first-child, 
+.zbutton--group .zbutton:hover.zbutton-active:first-child{ 
+	border-left-color:#d6d6d6
+}
+
+.zbutton--primary.zbutton:hover.zbutton-disabled, 
+.zbutton--primary.zbutton:focus.zbutton-disabled{ 
+	background-color:#666;
+}
+.zbutton.zc-file-btn.zbutton-disabled .zc-zbutton-file{ 
+	display:none;
+}
+
+/*All Type button Disabled Class*/
+
+
+/*Loading Icon button class start here*/
+.zbutton--loadingspinner {
+	display:block;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #cccccc;
+	border-left-color: #7a7a7a;
+	border-radius: 50%;
+	background-image: none;
+	opacity: 1;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-ms-transition: opacity 0.5s;
+	animation: rotate-loader 1s linear 0s infinite;
+	-webkit-animation: rotate-loader 1s linear 0s infinite;
+	-moz-animation: rotate-loader 1s linear 0s infinite;
+	-ms-animation: rotate-loader 1s linear 0s infinite;
+	float:left;
+	margin-top:1px;
+}
+
+.zbutton--primary .zbutton--loadingspinner {
+	border: 2px solid #7d7d7d;
+	border-left-color: #ffffff;
+}
+
+@keyframes rotate-loader {
+   0%{
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+  }
+   100% {
+   -moz-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+  }
+}
+  
+@-webkit-keyframes rotate-loader {
+   0% {
+   -moz-transform: rotate(0deg);
+   -ms-transform: rotate(0deg);
+   -webkit-transform: rotate(0deg);
+   transform: rotate(0deg);
+  }
+   100% {
+   -moz-transform: rotate(360deg);
+   -ms-transform: rotate(360deg);
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+  }
+}
+/*Loading Icon button class End here*/
+
+
+/*Small and Large button Class Name Start here*/
+
+.zbutton.zbutton--small{ 
+	height:25px; 
+	padding:2px 9px; 
+	font-size:12px;
+}
+.zbutton.zbutton--large{ 
+	height:40px;
+	padding:8px 18px; 
+	font-size:16px;
+}
+
+/*.zbutton--large .zc-icon-primary{ 
+	margin-top:4px;
+}*/ 
+.zbutton--large .zc-icon-secondary{ 
+	margin-top:5px;
+}
+
+.zbutton--small.zbutton .zbutton__text{ 
+	line-height:1.7;
+}
+
+.zbutton--large.zbutton--texticon--primary .zbutton__text, 
+.zbutton--large.zbutton.zc-txticon-normal .zbutton__text{ 
+	padding-left:10px;
+}
+
+.zc-normal-btnset .zbutton--large.zbutton--icononly{ 
+	width:56px;
+}
+.zc-normal-btnset .zbutton--small.zbutton--icononly{ 
+	width:36px;
+}
+
+.zbutton--small.zbutton--dropdown-icons-only{ 
+	width:52px;
+}
+.zbutton--large.zbutton--dropdown-icons-only{ 
+	width:70px;
+}
+
+/*.zbutton--small.zsplitbtn-secondary-icon-only .zc-icon-primary, 
+.zbutton--small.zsplitbtn-secondary-icon-only .zc-icon-secondary{ 
+	left:-2px;
+}
+.zbutton--large.zsplitbtn-secondary-icon-only .zc-icon-primary, 
+.zbutton--large.zsplitbtn-secondary-icon-only .zc-icon-secondary{ 
+	left:-5px;
+}*/
+
+/*Small and Large button Class Name End here*/
+
+/* To Hide input elements */
+.zbutton--helperhidden{
+	position: absolute;
+	display: none;
+}
+
+/* Hover on Disabled Button Bottom Border Issue */
+.zbutton--primary.zbutton:hover.zbutton-disabled{
+	border-bottom-color: #323232;
+}
+.zbutton:hover.zbutton-disabled{
+	border-bottom-color: #d9d9d9;
+}
+.zbutton--loading{
+	cursor:not-allowed;
+}
+
+.zbutton.zbutton--mini{ 
+	height:20px;
+	padding:2px 8px; 
+	font-size:10px;
+}
+
+/* Disabled Class */
+
+.zbutton.is-disabled,
+.zbutton--primary.zbutton.is-disabled{ 
+	opacity:.65; 
+	cursor:default;
+}
+.zbutton:hover.is-disabled,
+.zbutton:focus.is-disabled, 
+.zbutton--primary.zbutton:hover.is-disabled, 
+.zbutton--primary.zbutton:focus.is-disabled{ 
+	box-shadow:none; 
+	border-top:1px solid transparent;
+	border-right:1px solid transparent;
+	border-left:1px solid transparent; 
+	background-color:#eaeaea;
+}
+
+.zbutton--primary.zbutton:hover.is-disabled, 
+.zbutton--primary.zbutton:focus.is-disabled{ 
+	background-color:#666;
+}
+
+.zbutton--primary.zbutton:hover.is-disabled{
+	border-bottom-color: #323232;
+}
+.zbutton:hover.is-disabled{
+	border-bottom-color: #d9d9d9;
+}
+/* Hover Issue in Disabled button */
+/* Hover Issue in Disabled button */
+.zbutton:focus.zbutton-disabled{ border-bottom-color:#d9d9d9;}
+.zbutton--primary.zbutton:focus.zbutton-disabled{ border-bottom-color:#323232}
+
