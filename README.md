@@ -4,10 +4,6 @@ ember-cli-zbutton
 
 Usage
 
-Installation
-
-        ember install git+https://github.com/KarthikaDevi/ZButton.git
-
 Normal Button
 
     {{ #z-button }} Normal Button {{/z-button}}
@@ -38,14 +34,19 @@ Buttons with disabled state
 
     {{#z-button disabled="true" }} Disabled Button {{/z-button}}
     
+
+Installation
+
+        ember install git+https://github.com/KarthikaDevi/ZButton.git
+    
 Running the Server
 
-    ember server
+        ember server
     
     Visit your app at http://localhost:4200.
 
 Building
 
-    ember build
+        ember build
     
 For more information on using ember-cli, visit http://www.ember-cli.com/.
