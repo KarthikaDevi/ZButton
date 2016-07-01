@@ -1,3 +1,16 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h2 id="title">Button Component</h2>
 
+<table  border="0" cellspacing="25" cellpadding="25" align="center">
+<tr> {{#z-button}} Normal Button {{/z-button}} </tr>
+<tr> {{#z-button data-style="primary" }} Primary Button {{/z-button}} </tr>
+<tr><h2>Disabled Button </h2></tr>
+<tr> {{#z-button disabled=true}} Normal Button {{/z-button}}&nbsp;{{#z-button data-style="primary" disabled=true}}Primary Button{{/z-button}} </tr>
+<tr><h2>Button Sizing</h2></tr>
+<tr>
+ {{#z-button data-size="large"}} Large Button {{/z-button}}
+ {{#z-button}} Default Button {{/z-button}}
+ {{#z-button data-size="small"}} Small Button {{/z-button}}
+ {{#z-button data-size="mini"}} Mini Button {{/z-button}}
+</tr> 
+</table>
 {{outlet}}
