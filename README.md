@@ -43,7 +43,7 @@ Running the Server
 
         ember server
     
-    Visit your app at http://localhost:4200.
+        Visit your app at http://localhost:4200.
 
 Building
 
