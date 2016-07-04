@@ -133,8 +133,9 @@
 			}else{
 				var object = {};
 				$.each(element.attributes,function(){ // using element.attributes because element.dataset is not supported in IE 9 and 10.
-					var name = this.nodeName,
+					     var name = this.nodeName,
 						value = this.nodeValue;
+                                    if(name !== "events"){
 					if(name === "data"){ // No I18N
 						// Retrieving options present in data attribute as a json.
 						object = $.extend({},object,ZComponents._getObject(value.indexOf("{") < 0 ? "{" + value + "}" : value)); // No I18N
@@ -145,7 +146,8 @@
 							return g[1].toUpperCase(); // replacing the hyphenated names to camelCase
 						});
 						object[name] = (value === "true" || value === "false") ? (value === "true") : ((value.indexOf("{") !== -1) ? ZComponents._getObject(value.indexOf("{") < 0 ? "{" + value + "}" : value) : value); // No I18N
-					}				
+					}		
+                                    }		
 				});
 				$.data(element,"metadata",object); // No I18N
 				return object;

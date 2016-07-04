@@ -1,7 +1,7 @@
 <h2 id="title">Button Component</h2>
 
 <table  border="0" cellspacing="25" cellpadding="25" align="center">
-<tr> {{#z-button}} Normal Button {{/z-button}} </tr>
+<tr> {{#z-button events=(action "handleClick")}} Normal Button {{/z-button}} </tr>
 <tr> {{#z-button data-style="primary" }} Primary Button {{/z-button}} </tr>
 <tr><h2>Disabled Button </h2></tr>
 <tr> {{#z-button disabled=true}} Normal Button {{/z-button}}&nbsp;{{#z-button data-style="primary" disabled=true}}Primary Button{{/z-button}} </tr>
